@@ -5,3 +5,7 @@ Parts -
 - Arduino Leonardo 
 - MFRC522 RFID reader
 - LCD5110 Screen
+- Jumper Cables 
+
+ 
+
