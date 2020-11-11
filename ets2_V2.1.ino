@@ -1,3 +1,5 @@
+// Efekan Akbulut 2020
+// www.efekanakbulut.com 
 #include <SPI.h>
 #include <MFRC522.h>
 #include <LCD5110_Graph.h>
@@ -31,7 +33,7 @@ void setup()
   //myGLCD.print("Efekan", CENTER, 30);
   myGLCD.update();
 
-  Serial.println("Okumaya hazir ...");
+  Serial.println("Ready to Read ...");
 }
 
 void loop() {
@@ -63,7 +65,7 @@ void dump_byte_array(byte *buffer, byte bufferSize) {
   myGLCD.print(uidString , CENTER, 0);
   myGLCD.update();
 
-  if (uidString == "144 24 28 131") {
+  if (uidString == "your uid") {
 
     if (carLockState) {
       printUnlockMessage();
